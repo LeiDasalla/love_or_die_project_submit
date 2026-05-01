@@ -1,0 +1,830 @@
+/* Love or Die Dating Sim - Custom Styles */
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    background: linear-gradient(135deg, #fac6de, #ffffff, #fac6de);
+    background-size: 200% 200%;
+    font-family: 'Gaegu', cursive;
+    min-height: 100vh;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(255, 105, 180, 0.2);
+    border-bottom: 2px solid #ffb6c1;
+    z-index: 1020;
+}
+
+.navbar-brand {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 1.8rem;
+    color: #ff1493;
+    text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.3);
+    margin-right: 2rem;
+}
+
+.navbar-logo {
+    height: 2.5rem;
+    width: auto;
+}
+
+.navbar-nav {
+    gap: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.1rem;
+    color: #ff69b4;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff1493;
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+    animation: jiggle 0.9s ease-in-out;
+}
+
+@keyframes jiggle {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.15) rotate(-3deg); }
+    50% { transform: scale(1.25) rotate(0deg); }
+    75% { transform: scale(1.15) rotate(3deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* ===== JUMBOTRON ===== */
+.jumbotron {
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 50%, #ff1493 100%);
+    color: white;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    margin: 0;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+    border: 3px solid #ffe4e1;
+}
+
+.jumbotron h1 {
+    font-family: 'Emilys+Candy', cursive;
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5);
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.jumbotron p {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.3);
+}
+
+.jumbotron .btn-primary {
+    background-color: #ff1493;
+    border-color: #ff1493;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4);
+}
+
+/* ===== CAROUSEL ===== */
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+    margin: 20px 0;
+    border: 3px solid #ffb6c1;
+}
+
+.carousel-item img {
+    height: 800px;
+    width: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators li {
+    background-color: rgba(255, 182, 193, 0.7);
+    border: 2px solid #ff69b4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #ff1493;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border: 2px solid #ffb6c1;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.carousel-caption h5 {
+    font-family: 'Gamja Flower', cursive;
+    color: #ff1493;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.2);
+}
+
+.carousel-caption p {
+    color: #ff69b4;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Gaegu', cursive;
+    text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    border: 2px solid #ffe4e1;
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ffe4e1;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(255, 105, 180, 0.25);
+}
+
+.card-title {
+    font-family: 'Gamja Flower', cursive;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.featured-tier {
+    transform: scale(1.05);
+}
+
+/* ===== ACCORDION ===== */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 105, 180, 0.1);
+    color: #ff1493;
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.25);
+}
+
+/* ===== FORM STYLES ===== */
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #ff1493;
+    border-color: #ff1493;
+}
+
+.form-check-input:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.25);
+}
+
+/* ===== BUTTON STYLES ===== */
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.btn-pink {
+    background-color: #ff99aa;
+    border: none;
+    color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 12px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-pink:hover {
+    background-color: #ff1493;
+}
+
+/* ===== FIGURE/IMAGE STYLES ===== */
+figure {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+figure img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-family: 'Gamja Flower', cursive;
+    color: #ff1493;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* ===== SPLASH SCREEN ===== */
+.splash-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, rgba(255, 182, 193, 0.95), rgba(255, 20, 147, 0.95));
+    color: #ffffff;
+    transition: opacity 3s ease;
+}
+
+.splash-loaded {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.splash-content {
+    text-align: center;
+    padding: 2rem 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(255, 105, 180, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    animation: splashPulse 3s ease-in-out infinite alternate;
+}
+
+.splash-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+}
+
+.splash-content h1 {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.splash-content p {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.25rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+@keyframes splashPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.03); }
+}
+
+/* ===== SOCIAL MEDIA ICONS ===== */
+.social img {
+    display: inline-block;
+    padding: 4%;
+    width: 50px;
+    height: 50px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-pink { color: #ff1493; }
+.text-black { color: #000; }
+.text-green { color: #237c23; }
+.text-blue { color: #46a2ff; }
+
+.bg-pink { background-color: #ffb6c1; }
+.bg-black { background-color: #000; }
+
+.border-pink { border-color: #ffb6c1 !important; }
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+@media (max-width: 575px) {
+    .jumbotron {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+        border-radius: 15px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .jumbotron .btn-primary {
+        font-size: 0.95rem;
+        padding: 8px 20px;
+    }
+
+    main {
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 10px;
+    }
+
+    .carousel {
+        border-radius: 10px;
+        margin: 1rem 0;
+        border: 2px solid #ffb6c1;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        bottom: 10px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+        display: none;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .list-unstyled li {
+        margin-bottom: 0.25rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .form-label {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .alert {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .alert h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    figure {
+        margin-bottom: 1rem;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+    }
+
+    .featured-tier {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .jumbotron {
+        padding: 2.5rem 1.5rem;
+        margin: 0.75rem 0.5rem;
+        border-radius: 15px;
+    }
+
+    .jumbotron h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .jumbotron .btn-primary {
+        font-size: 1.05rem;
+        padding: 10px 28px;
+    }
+
+    main {
+        padding: 1.5rem;
+        margin: 1rem 0.5rem;
+        border-radius: 15px;
+    }
+
+    .carousel {
+        border-radius: 15px;
+        margin: 1.5rem 0;
+        border: 2px solid #ffb6c1;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 15px;
+        padding: 12px 20px;
+        border-radius: 12px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 1.4rem;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .btn-lg {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.8rem;
+    }
+
+    .alert {
+        padding: 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .alert h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    figure {
+        margin-bottom: 1.5rem;
+    }
+
+    figcaption {
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron {
+        padding: 4rem 3rem;
+        margin: 1rem 0;
+        border-radius: 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .jumbotron .btn-primary {
+        font-size: 1.2rem;
+        padding: 12px 35px;
+    }
+
+    main {
+        padding: 2rem;
+        margin: 1.5rem 0;
+        border-radius: 20px;
+    }
+
+    .carousel {
+        border-radius: 20px;
+        margin: 2rem 0;
+        border: 3px solid #ffb6c1;
+    }
+
+    .carousel-item img {
+        height: 800px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+        padding: 15px 30px;
+        border-radius: 15px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+        border-radius: 15px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    section h3 {
+        font-size: 1.6rem;
+    }
+
+    footer h5 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 1.05rem;
+        padding: 0.75rem;
+    }
+
+    .form-label {
+        font-size: 1.05rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .btn {
+        font-size: 1.05rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .btn-lg {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    .alert {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .alert h4 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    figure {
+        margin-bottom: 2rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        margin-top: 0.75rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron {
+        padding: 5rem 4rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    section h3 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .jumbotron {
+        padding: 6rem 5rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 5.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.6rem;
+    }
+
+    section h2 {
+        font-size: 3.2rem;
+    }
+
+    footer {
+        padding: 4rem 2rem;
+    }
+}
