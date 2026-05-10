@@ -378,7 +378,7 @@ figcaption {
 
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
 
-@media (max-width: 575px) {
+@media screen and (min-width: 488px), print{
     .jumbotron {
         padding: 1.5rem 1rem;
         margin: 0 0.5rem;
@@ -513,7 +513,7 @@ figcaption {
     }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media screen and (min-width: 769px), print {
     .jumbotron {
         padding: 2.5rem 1.5rem;
         margin: 0.75rem 0.5rem;
@@ -646,168 +646,7 @@ figcaption {
         margin-top: 0.5rem;
     }
 }
-
-@media (min-width: 992px) {
-    .jumbotron {
-        padding: 4rem 3rem;
-        margin: 1rem 0;
-        border-radius: 20px;
-    }
-
-    .jumbotron h1 {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .jumbotron p {
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-    }
-
-    .jumbotron .btn-primary {
-        font-size: 1.2rem;
-        padding: 12px 35px;
-    }
-
-    main {
-        padding: 2rem;
-        margin: 1.5rem 0;
-        border-radius: 20px;
-    }
-
-    .carousel {
-        border-radius: 20px;
-        margin: 2rem 0;
-        border: 3px solid #ffb6c1;
-    }
-
-    .carousel-item img {
-        height: 800px;
-    }
-
-    .carousel-caption {
-        bottom: 30px;
-        padding: 15px 30px;
-        border-radius: 15px;
-    }
-
-    .carousel-caption h5 {
-        font-size: 1.8rem;
-        margin-bottom: 8px;
-    }
-
-    .carousel-caption p {
-        font-size: 1.1rem;
-    }
-
-    .card {
-        margin-bottom: 2rem;
-        border-radius: 15px;
-    }
-
-    .card-body {
-        padding: 1.5rem;
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-
-    section {
-        margin-bottom: 3rem;
-    }
-
-    section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    section h3 {
-        font-size: 1.6rem;
-    }
-
-    footer h5 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .form-control,
-    .form-select {
-        font-size: 1.05rem;
-        padding: 0.75rem;
-    }
-
-    .form-label {
-        font-size: 1.05rem;
-        margin-bottom: 0.6rem;
-    }
-
-    .btn {
-        font-size: 1.05rem;
-        padding: 0.7rem 1.5rem;
-    }
-
-    .btn-lg {
-        font-size: 1.2rem;
-        padding: 1rem 2rem;
-    }
-
-    .alert {
-        padding: 1.5rem;
-        font-size: 1rem;
-    }
-
-    .alert h4 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-
-    figure {
-        margin-bottom: 2rem;
-    }
-
-    figcaption {
-        font-size: 1rem;
-        margin-top: 0.75rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .jumbotron {
-        padding: 5rem 4rem;
-    }
-
-    .jumbotron h1 {
-        font-size: 5rem;
-    }
-
-    .jumbotron p {
-        font-size: 1.5rem;
-    }
-
-    section h2 {
-        font-size: 3rem;
-    }
-
-    section h3 {
-        font-size: 1.8rem;
-    }
-
-    main {
-        padding: 2.5rem;
-    }
-}
-
-@media (min-width: 1400px) {
+@media screen and (min-width: 1441px){
     .jumbotron {
         padding: 6rem 5rem;
     }
